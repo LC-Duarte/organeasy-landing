@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>OrganEasy — Sua gestão fiscal, direto no WhatsApp</title>
-<meta name="description" content="OrganEasy organiza suas notas, receitas, despesas e estimativa de imposto direto no WhatsApp. Feito para MEI, autônomos e produtores rurais. Em breve." />
+<title>Organeasy — Sua gestão fiscal, direto no WhatsApp</title>
+<meta name="description" content="Organeasy organiza suas notas, receitas, despesas e estimativa de imposto direto no WhatsApp. Feito para MEI, autônomos e produtores rurais. Em breve." />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,13 +20,8 @@
 <header class="topbar">
   <div class="wrap topbar-inner">
     <div class="logo">
-      <span class="logo-mark" aria-hidden="true">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2C8 6 4 9.5 4 14a8 8 0 0 0 16 0c0-4.5-4-8-8-12Z" fill="#B08D3E"/>
-          <path d="M12 22V11" stroke="#0B3B2D" stroke-width="1.4" stroke-linecap="round"/>
-        </svg>
-      </span>
-      OrganEasy
+      <img class="logo-mark" src="logo.svg" alt="Organeasy" width="32" height="32">
+      Organeasy
     </div>
     <span class="badge">Em breve</span>
   </div>
@@ -41,21 +36,22 @@
   </h1>
 
   <p class="lede">
-    A OrganEasy ajuda pequenos negócios, autônomos, MEIs e produtores rurais a organizar
+    A Organeasy ajuda pequenos negócios, autônomos, MEIs e produtores rurais a organizar
     notas fiscais, receitas e despesas — e ainda dá uma estimativa do imposto a pagar.
     Tudo por mensagem, sem baixar outro aplicativo e sem complicação.
   </p>
 
   <section class="waitlist" aria-labelledby="waitlist-title">
     <h2 id="waitlist-title">Quer ser avisado no lançamento?</h2>
-    <p class="waitlist-sub">Deixe seu e-mail e te avisamos assim que abrirmos as portas.</p>
+    <p class="waitlist-sub">Manda um oi no WhatsApp e te avisamos assim que abrirmos as portas.</p>
 
-    <form class="waitlist-form" id="waitlist-form" novalidate>
-      <label class="sr-only" for="email">Seu e-mail</label>
-      <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" autocomplete="email" required>
-      <button type="submit">Quero ser avisado</button>
-    </form>
-    <p class="form-note" id="form-note" role="status" aria-live="polite">Sem spam. Só um aviso quando estivermos no ar.</p>
+    <a class="whatsapp-cta" href="https://wa.me/5541998140049?text=Oi!%20Quero%20entrar%20na%20lista%20de%20espera%20do%20Organeasy." target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+        <path d="M16.001 3C9.383 3 4 8.383 4 15c0 2.373.694 4.583 1.885 6.445L4 29l7.752-1.845A11.94 11.94 0 0 0 16 27c6.617 0 12-5.383 12-12S22.617 3 16.001 3zm.001 21.818c-1.98 0-3.845-.55-5.434-1.502l-.39-.232-4.6 1.096 1.13-4.48-.254-.4A9.77 9.77 0 0 1 5.182 15c0-5.964 4.855-10.818 10.819-10.818S26.818 9.036 26.818 15 22.964 24.818 16.002 24.818zm5.63-8.17c-.309-.155-1.825-.9-2.108-1.003-.283-.103-.489-.155-.695.155-.206.31-.797 1.003-.978 1.209-.18.206-.36.232-.669.077-.309-.155-1.304-.48-2.484-1.53-.918-.818-1.538-1.828-1.719-2.137-.18-.31-.019-.478.136-.632.14-.14.309-.36.464-.541.155-.18.206-.31.309-.516.103-.206.052-.387-.026-.542-.077-.155-.695-1.675-.953-2.294-.251-.605-.507-.523-.695-.533l-.593-.011c-.206 0-.542.077-.826.387-.283.31-1.08 1.056-1.08 2.575s1.106 2.988 1.26 3.194c.155.206 2.176 3.323 5.27 4.66.737.318 1.312.508 1.76.65.739.235 1.412.202 1.944.123.593-.088 1.825-.746 2.083-1.466.258-.72.258-1.336.18-1.466-.077-.129-.283-.206-.593-.36z"/>
+      </svg>
+      Falar no WhatsApp
+    </a>
+    <p class="form-note">Sem spam. Só um aviso quando estivermos no ar.</p>
   </section>
 
   <ul class="pillars">
@@ -80,7 +76,7 @@
 
 <footer class="footer">
   <div class="wrap footer-inner">
-    <span>© <span id="year"></span> OrganEasy. Todos os direitos reservados.</span>
+    <span>© <span id="year"></span> organeasy.ai. Todos os direitos reservados.</span>
     <span>Feito para quem trabalha duro no dia a dia.</span>
   </div>
 </footer>
