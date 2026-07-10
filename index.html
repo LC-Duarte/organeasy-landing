@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OrganEasy — Sua gestão fiscal, direto no WhatsApp</title>
+<meta name="description" content="OrganEasy organiza suas notas, receitas, despesas e estimativa de imposto direto no WhatsApp. Feito para MEI, autônomos e produtores rurais. Em breve." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bg-glow" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="logo">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C8 6 4 9.5 4 14a8 8 0 0 0 16 0c0-4.5-4-8-8-12Z" fill="#B08D3E"/>
+          <path d="M12 22V11" stroke="#0B3B2D" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+      </span>
+      OrganEasy
+    </div>
+    <span class="badge">Em breve</span>
+  </div>
+</header>
+
+<main class="wrap hero">
+  <p class="eyebrow">Gestão fiscal e financeira • pelo WhatsApp</p>
+
+  <h1>
+    Suas notas, receitas e imposto,<br>
+    organizados no <span class="accent">WhatsApp</span>.
+  </h1>
+
+  <p class="lede">
+    A OrganEasy ajuda pequenos negócios, autônomos, MEIs e produtores rurais a organizar
+    notas fiscais, receitas e despesas — e ainda dá uma estimativa do imposto a pagar.
+    Tudo por mensagem, sem baixar outro aplicativo e sem complicação.
+  </p>
+
+  <section class="waitlist" aria-labelledby="waitlist-title">
+    <h2 id="waitlist-title">Quer ser avisado no lançamento?</h2>
+    <p class="waitlist-sub">Deixe seu e-mail e te avisamos assim que abrirmos as portas.</p>
+
+    <form class="waitlist-form" id="waitlist-form" novalidate>
+      <label class="sr-only" for="email">Seu e-mail</label>
+      <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" autocomplete="email" required>
+      <button type="submit">Quero ser avisado</button>
+    </form>
+    <p class="form-note" id="form-note" role="status" aria-live="polite">Sem spam. Só um aviso quando estivermos no ar.</p>
+  </section>
+
+  <ul class="pillars">
+    <li>
+      <span class="pillar-icon">📋</span>
+      <span>Notas fiscais organizadas</span>
+    </li>
+    <li>
+      <span class="pillar-icon">💰</span>
+      <span>Receitas e despesas em dia</span>
+    </li>
+    <li>
+      <span class="pillar-icon">📊</span>
+      <span>Estimativa de imposto</span>
+    </li>
+    <li>
+      <span class="pillar-icon">💬</span>
+      <span>Tudo pelo WhatsApp</span>
+    </li>
+  </ul>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>© <span id="year"></span> OrganEasy. Todos os direitos reservados.</span>
+    <span>Feito para quem trabalha duro no dia a dia.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
